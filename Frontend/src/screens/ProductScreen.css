@@ -96,6 +96,7 @@
 }
 
 .wishlist {
+  cursor: pointer;
   border-bottom: 1px solid rgb(23, 23, 23, 0.2);
 }
 
@@ -148,6 +149,17 @@
 
 .productprice {
   float: right;
+}
+
+.modalbutton {
+  color: rgb(107, 45, 151);
+  background-color: white;
+  border: 0px;
+}
+
+.imagemodal {
+  padding: 0px 0px 0px 50px;
+  background-color: rgba(241, 241, 241, 0.228);
 }
 
 @media (max-width: 800px) {
@@ -298,6 +310,7 @@
   }
 
   .wishlist {
+    cursor: pointer;
     border-bottom: 1px solid rgb(23, 23, 23, 0.2);
   }
 

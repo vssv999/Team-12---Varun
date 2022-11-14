@@ -3,6 +3,9 @@ import "./ProductScreen.css";
 import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import { addToWishList } from "../redux/actions/wishlistActions";
 
 // Actions
 import { getProductDetails } from "../redux/actions/productActions";
@@ -39,6 +42,11 @@ const ProductScreen = ({ match, history }) => {
   const [qty, setQty] = useState(1);
   const dispatch = useDispatch();
 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const productDetails = useSelector((state) => state.getProductDetails);
   const { loading, error, product } = productDetails;
 
@@ -51,6 +59,11 @@ const ProductScreen = ({ match, history }) => {
   const addToCartHandler = () => {
     dispatch(addToCart(product._id, qty));
     history.push(`/cartItems`);
+  };
+
+  const addToWishListHandler = () => {
+    dispatch(addToWishList(product._id));
+    history.push(`/wishItems`);
   };
 
   const handleQuantity = (type) => {
@@ -95,6 +108,22 @@ const ProductScreen = ({ match, history }) => {
                 src={product.imageUrl}
                 alt="productimage"
               />
+            </div>
+            <div className="text-center">
+              <Button className="modalbutton" onClick={handleShow}>
+                <i class="bi bi-zoom-in fw-bodler fs-4"></i>
+              </Button>
+
+              <Modal show={show} onHide={handleClose}>
+                {/* <Modal.Header closeButton></Modal.Header> */}
+                <Modal.Body className="bg-dark imagemodal">
+                  <img
+                    className="productimage"
+                    src={product.imageUrl}
+                    alt="productimage"
+                  />
+                </Modal.Body>
+              </Modal>
             </div>
           </Col>
           <Col lg={5} className="productscreen__right mt-4">
@@ -145,8 +174,12 @@ const ProductScreen = ({ match, history }) => {
                   </button>
                 </Link>
               </div>
-              <p className="wishlist fs-6 text-primary">
-                <i className="bi bi-heart me-2"></i>Add to Wish List
+              <p
+                className="wishlist fs-6 text-primary"
+                onClick={addToWishListHandler}
+              >
+                <i className="bi bi-heart me-2"></i>
+                Add to Wish List
               </p>
               <div>
                 <p className="totalprice fs-6 pb-3 me-0">
