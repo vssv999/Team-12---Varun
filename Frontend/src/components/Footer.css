@@ -1,0 +1,36 @@
+.footermain {
+  background-color: #000048;
+  color: #fff;
+  width: auto;
+  height: 300px;
+  padding-top: 100px;
+  margin-top: 100px;
+}
+
+.footerleft {
+  border-top: 2px solid rgb(255, 255, 255);
+  padding-top: 50px;
+}
+
+.footerright {
+  border-top: 2px solid rgb(255, 255, 255);
+  padding-top: 50px;
+  font-size: 1rem;
+}
+
+.leftMargin {
+  color: #fff;
+  margin: 4px;
+}
+
+@media (max-width: 900px) {
+  .footerleft {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerleft {
+    text-align: center;
+  }
+}
