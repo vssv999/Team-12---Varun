@@ -83,7 +83,7 @@ const products = [
     price: 330,
     countInStock: 10,
     imageUrl:
-      "https://d12w9lfqeljony.cloudfront.net/b534ba68236ba543ae44b22bd110a1d6/681x1024/7334505cf4303594abcb6e5c1fb0df584cd28808_58469547.jpg",
+      "https://imagesm.plexussquare.in/URBANGEAR/Images/14-08-2020/1597387003835.jpg",
     category: "Travel",
   },
   {
@@ -159,8 +159,7 @@ const products = [
       "All season usage without any affect from rain or snow. Minimum shedding. Durable and. Can sustain heat and heavy usage Where to use: Can be use indoor and outdoor both. You can use it as carpet inside the house, for landscaping garden, for decorating Balcony etc. Natural appearance: Artificial grass adopted through principles of bionics to provide the exact look and feel of natural grass Different Sizes: We are offering different sizes of Grass Carpet on Amazon. Please match the size with your space before ordering so that it matches your requirement.",
     price: 490,
     countInStock: 10,
-    imageUrl:
-      "https://d12w9lfqeljony.cloudfront.net/f1b6f2857fb6d44dd73c7041e0aa0f19/751x1024/0e9845cfccd1277cffdc336fe1eb10fa93085fba_55877409.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/61ujx83TxXL._SX679_.jpg",
     category: "Outdoor",
   },
 ];
