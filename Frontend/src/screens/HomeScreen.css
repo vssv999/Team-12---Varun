@@ -46,8 +46,12 @@
   border-radius: 1px;
   font-weight: bolder;
   padding: 2px;
-  transition: 0.2s ease-in;
+  transition: 0.01s ease-in;
   box-shadow: 0px 2px 3px 0px rgb(0, 0, 0, 0.3);
+  -webkit-transition: 0.01s ease-in;
+  -moz-transition: 0.01s ease-in;
+  -ms-transition: 0.01s ease-in;
+  -o-transition: 0.01s ease-in;
 }
 
 .pricefilter button {
@@ -81,7 +85,11 @@
   font: 400 0.8vmax "Roboto";
   margin: 0.4vmax;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 0.01s;
+  -webkit-transition: all 0.01s;
+  -moz-transition: all 0.01s;
+  -ms-transition: all 0.01s;
+  -o-transition: all 0.01s;
 }
 .category-link:hover {
   color: tomato;
