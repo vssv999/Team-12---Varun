@@ -3,8 +3,9 @@ import { useEffect, useState } from "react";
 import Container from "react-bootstrap/esm/Container";
 import { Link } from "react-router-dom";
 import "./HomeScreen.css";
+
 //Components
-import { prices } from "../components/utils";
+import { prices } from "../utils.js";
 import Product from "../components/Product";
 
 const FilterScreen = ({ products, error, getFilterUrl, min, max }) => {
