@@ -26,7 +26,7 @@ const Product = ({ imageUrl, brand, price, name, productId, history }) => {
         </div>
       </div>
       <div className="product_info text-center row">
-        <p className="fw-bold info_brand">{brand}</p>
+        <p className="fw-bold text-dark info_brand">{brand}</p>
         <Link
           to={`/product/${productId}`}
           className="info_name text-decoration-none text-dark"
