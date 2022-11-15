@@ -107,11 +107,25 @@ const ProductScreen = ({ match, history }) => {
                 className="productimage"
                 src={product.imageUrl}
                 alt="productimage"
+                onClick={handleShow}
               />
+              <Modal show={show} onHide={handleClose}>
+                <Modal.Body className="bg-dark imagemodal">
+                  <img
+                    className="productimage"
+                    src={product.imageUrl}
+                    alt="productimage"
+                  />
+                </Modal.Body>
+              </Modal>
             </div>
             <div className="text-center">
-              <Button className="modalbutton" onClick={handleShow}>
-                <i class="bi bi-zoom-in fw-bodler fs-4"></i>
+              <Button
+                className="modalbutton bg-none"
+                variant="white"
+                onClick={handleShow}
+              >
+                <i class="bi bi-zoom-in fw-bolder fs-4"></i>
               </Button>
 
               <Modal show={show} onHide={handleClose}>

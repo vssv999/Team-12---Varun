@@ -1,29 +1,32 @@
 .product {
+  text-decoration: none;
   width: 280px;
   padding: 1rem;
   background: #fff;
   cursor: pointer;
-  margin: 8px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-direction: column;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.304);
+  overflow: hidden;
+}
+
+.product:hover {
+  border: 1px solid #0c76bd;
 }
 
 .wishlisticon {
+  font-size: 22px;
   position: relative;
   padding: 3px;
-  border: 10px solid #131313;
+  border: 1px solid #131313;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+}
+
+.wishlisticon:hover {
+  box-shadow: 3px inset rgba(0, 0, 0, 0.261);
 }
 
 .product > img {
@@ -42,7 +45,6 @@
 }
 
 .info_brand {
-  cursor: auto;
   font-size: 14px;
   overflow: hidden;
 }
@@ -54,13 +56,6 @@
 
 .info_name {
   font-size: 13px;
-  overflow: hidden;
-}
-
-.info_name:hover {
-  font-weight: bold;
-  font-size: 13px;
-  color: #171717;
   overflow: hidden;
 }
 

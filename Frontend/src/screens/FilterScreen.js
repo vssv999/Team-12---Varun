@@ -28,7 +28,6 @@ const FilterScreen = ({ products, error, getFilterUrl, min, max }) => {
   return (
     <Container fluid>
       <br />
-
       <div>
         <div className="homescreen row mt-2">
           <div className="col-lg-1"></div>
@@ -86,7 +85,7 @@ const FilterScreen = ({ products, error, getFilterUrl, min, max }) => {
           {error ? (
             <h2 className="text-center">{error}</h2>
           ) : (
-            <p className="homescreen_products col-lg-7">
+            <p className="homescreen_products col-lg-9">
               {products &&
                 data.map((product) => (
                   <Product
@@ -103,7 +102,7 @@ const FilterScreen = ({ products, error, getFilterUrl, min, max }) => {
             </p>
           )}
         </div>
-        <div className="col-lg-1"></div>
+        {/* <div className="col-lg-1"></div> */}
       </div>
     </Container>
   );

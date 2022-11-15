@@ -34,7 +34,7 @@ const HomeScreen = (props) => {
 
   return (
     <Container fluid>
-      <div className="mt-3">
+      <div className="mt-2">
         <Row className="ms-3">
           <Col lg={8} className="me-3"></Col>
           <Col lg={3} className="homescreen_sorting d-flex">

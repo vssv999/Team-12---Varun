@@ -67,7 +67,7 @@ const NavBarComps = () => {
                   </Nav.Link>
                   <Nav.Link
                     as={Link}
-                    to="/cart"
+                    to="/cartItems"
                     style={{ width: "40px", color: "#000" }}
                   >
                     <i className="bi bi-cart3 fs-4 me-4"></i>

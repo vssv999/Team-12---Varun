@@ -13,14 +13,17 @@ const Product = ({ imageUrl, brand, price, name, productId, history }) => {
   };
 
   return (
-    <div className="product m-1 border border-grey">
+    <Link className="product m-3" as={Link} to={`/product/${productId}`}>
       <div className="text-end row">
-        <Link onClick={addToWishListHandler}>
-          <i className="bi bi-heart bg-white wishlisticon border border-grey"></i>
-        </Link>
-        <Link to={`/product/${productId}`}>
+        <div>
+          <Link
+            className="bg-white wishlisticon"
+            onClick={addToWishListHandler}
+          >
+            <i className="bi bi-heart"></i>
+          </Link>
           <img src={imageUrl} alt={name} width={100} />
-        </Link>
+        </div>
       </div>
       <div className="product_info text-center row">
         <p className="fw-bold info_brand">{brand}</p>
@@ -32,7 +35,7 @@ const Product = ({ imageUrl, brand, price, name, productId, history }) => {
         </Link>
         <p className="info__price fw-bold m-2">{price} Points</p>
       </div>
-    </div>
+    </Link>
   );
 };
 

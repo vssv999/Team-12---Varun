@@ -35,6 +35,25 @@ const CartScreen = () => {
 
   return (
     <>
+      <Row className="ms-5">
+        <Col>
+          <Link
+            to={"/"}
+            className="quickchange text-decoration-none text-dark ms-5"
+          >
+            {" "}
+            Home{" "}
+          </Link>{" "}
+          |
+          <Link
+            to={"/cartItems"}
+            className="quickchange text-decoration-none text-dark"
+          >
+            {" "}
+            ShoppingCart
+          </Link>
+        </Col>
+      </Row>
       <div className="cartscreen">
         <div className="cartscreen__left">
           {cartItems.length === 0 ? (

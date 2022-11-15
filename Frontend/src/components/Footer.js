@@ -5,18 +5,18 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footermain">
-      <Container fluid style={{ backgroundColor: "#000048" }}>
+      <Container fluid style={{ backgroundColor: "#fff" }}>
         <Row className="footer">
           <Col lg={1}></Col>
-          <Col lg={5} className="footerleft">
-            <div className="float-left text-white">
+          <Col lg={6} className="footerleft">
+            <div className="float-left text-dark">
               <p>
                 ©2019 Globoforce Limited trading as Workhuman. All rights
                 reserved.
               </p>{" "}
             </div>
           </Col>
-          <Col lg={5} className="footerright d-lg-block d-none">
+          <Col lg={4} className="footerright d-lg-block d-none">
             <div className="float-right">
               <p>
                 {" "}

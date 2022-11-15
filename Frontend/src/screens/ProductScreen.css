@@ -15,8 +15,9 @@
   width: auto;
   height: auto;
   border: 1px solid rgb(150, 150, 150, 0.5);
-  margin: 1rem 3rem 3rem 4rem;
+  margin: 1rem 3rem 0rem 4rem;
   padding: 5.5rem;
+  cursor: pointer;
 }
 
 .productimage {
@@ -162,6 +163,11 @@
   background-color: rgba(241, 241, 241, 0.228);
 }
 
+.modalbutton:hover {
+  color: #000;
+  background-color: none;
+}
+
 @media (max-width: 800px) {
   .productscreen {
     width: auto;
@@ -204,7 +210,7 @@
     width: auto;
     height: auto;
     border: 1px solid #000;
-    margin: 3rem;
+    margin: 3rem 3rem 0rem 3rem;
     padding: 3rem;
   }
 

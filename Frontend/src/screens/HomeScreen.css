@@ -41,7 +41,7 @@
 
 .pricefilter ul li #pricetags:focus {
   position: relative;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border: 2px solid #171717;
   border-radius: 1px;
   font-weight: bolder;
@@ -66,7 +66,7 @@
 
 .category button:focus {
   position: relative;
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   border: 2px solid #171717;
   border-radius: 1px;
   font-weight: bolder;

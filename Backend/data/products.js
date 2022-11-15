@@ -148,8 +148,7 @@ const products = [
       "It is compact small size with 4 foldable legs, just like a suitcase when folded, dimension (17 length x 10 breath x 17 height with open legs) inches approx",
     price: 1850,
     countInStock: 10,
-    imageUrl:
-      "https://d12w9lfqeljony.cloudfront.net/f1b6f2857fb6d44dd73c7041e0aa0f19/1024x1021/40eeb8dfc500155c1e3e4e9c53da3b3a675f6487_55876974.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/516hD0qNPWL.jpg",
     category: "Outdoor",
   },
   {
