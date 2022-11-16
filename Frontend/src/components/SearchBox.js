@@ -6,7 +6,7 @@ const SearchBox = () => {
   return (
     <Form inline className="me-2">
       <div
-        className="input-group mb-3 border border-dark rounded-pill search mt-1 "
+        className="input-group mb-3 border border-dark rounded-pill search mt-1"
         style={{ width: "280px" }}
       >
         <input type="text" className="form-control border-0 rounded-pill" />
