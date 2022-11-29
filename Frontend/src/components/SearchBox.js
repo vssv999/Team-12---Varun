@@ -4,7 +4,7 @@ import "./Search.css";
 
 const SearchBox = () => {
   return (
-    <Form inline className="me-2">
+    <Form inline className="me-2" data-testId="search">
       <div
         className="input-group mb-3 border border-dark rounded-pill search mt-1"
         style={{ width: "280px" }}

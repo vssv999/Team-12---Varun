@@ -4,7 +4,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footermain">
+    <div className="footermain" data-testId="footer">
       <Container fluid style={{ backgroundColor: "#fff" }}>
         <Row className="footer">
           <Col lg={1}></Col>

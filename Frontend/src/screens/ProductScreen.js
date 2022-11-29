@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { Provider } from "react-redux";
 import { addToWishList } from "../redux/actions/wishlistActions";
 
 // Actions
@@ -75,7 +76,7 @@ const ProductScreen = ({ match, history }) => {
   };
 
   return (
-    <div className="productscreen">
+    <div className="productscreen" data-testId="productdetails">
       {loading ? (
         <h2>Loading...</h2>
       ) : error ? (

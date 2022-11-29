@@ -34,7 +34,7 @@ const CartScreen = () => {
   };
 
   return (
-    <>
+    <div data-TestId="location-display">
       <Row className="ms-5">
         <Col>
           <Link
@@ -89,7 +89,7 @@ const CartScreen = () => {
           </Row>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

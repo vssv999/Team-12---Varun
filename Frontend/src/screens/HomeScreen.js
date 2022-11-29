@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import Container from "react-bootstrap/esm/Container";
+import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 
 import "./HomeScreen.css";
@@ -33,7 +33,7 @@ const HomeScreen = (props) => {
   };
 
   return (
-    <Container fluid>
+    <Container fluid data-testId="homescreen">
       <div className="mt-2">
         <Row className="ms-3">
           <Col lg={8} className="me-3"></Col>

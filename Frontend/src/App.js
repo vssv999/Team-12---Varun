@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <NavbarComps />
-      <main className="app">
+      <main className="app" data-testId="app">
         <Switch>
           <Route exact path="/" component={HomeScreen} />
           <Route exact path="/min/:min/max/:max" component={HomeScreen} />

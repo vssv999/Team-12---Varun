@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import Container from "react-bootstrap/esm/Container";
+import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import "./HomeScreen.css";
 
@@ -86,7 +86,7 @@ const FilterScreen = ({ products, error, getFilterUrl, min, max }) => {
           {error ? (
             <h2 className="text-center">{error}</h2>
           ) : (
-            <p className="homescreen_products col-lg-9">
+            <p className="homescreen_products col-lg-9" data-testId="productslist">
               {products &&
                 data.map((product) => (
                   <Product
